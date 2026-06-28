@@ -4,16 +4,16 @@
 
 BASE_URL="https://luckyproxy.web.id"
 
-# Color definitions
-RED=$(tput setaf 1 2>/dev/null)
-GREEN=$(tput setaf 2 2>/dev/null)
-YELLOW=$(tput setaf 3 2>/dev/null)
-CYAN=$(tput setaf 6 2>/dev/null)
-NC=$(tput sgr0 2>/dev/null)
+# ANSI colors (no tput dependency)
+RED='\e[31m'
+GREEN='\e[32m'
+YELLOW='\e[33m'
+CYAN='\e[36m'
+NC='\e[0m'
 
 # ensure curl is available
 if ! command -v curl >/dev/null 2>&1; then
-  echo "${RED}curl required. Install: pkg install curl${NC}" >&2
+  echo -e "${RED}curl required. Install: pkg install curl${NC}" >&2
   exit 1
 fi
 
@@ -30,35 +30,35 @@ detect_arch() {
     x86_64|amd64)                 echo "x86_64" ;;
     i686|i386|x86)                echo "x86" ;;
     *)
-      echo "${RED}unsupported arch: $arch${NC}" >&2
+      echo -e "${RED}unsupported arch: $arch${NC}" >&2
       exit 1
       ;;
   esac
 }
 
 ARCH=$(detect_arch)
-echo "${CYAN}Architecture: ${ARCH}${NC}"
+echo -e "${CYAN}[*] Architecture: ${ARCH}${NC}"
 
 # download binary
 BIN_URL="$BASE_URL/android/$ARCH/bin/LuckyProxy"
-echo "${CYAN}Downloading ${BIN_URL} ...${NC}"
-curl -fSL -o LuckyProxy "$BIN_URL" || {
-  echo "${RED}Download failed (arch $ARCH not available?)${NC}" >&2
+echo -e "${CYAN}[*] Downloading LuckyProxy ...${NC}"
+curl -fsSL -o LuckyProxy "$BIN_URL" || {
+  echo -e "${RED}[!] Download failed (arch $ARCH not available?)${NC}" >&2
   exit 1
 }
 chmod +x LuckyProxy
-echo "${GREEN}LuckyProxy saved: $(pwd)/LuckyProxy${NC}"
+echo -e "${GREEN}[+] Saved: $(pwd)/LuckyProxy${NC}"
 
 # download items.dat if missing
 if [ ! -f items.dat ]; then
-  echo "${YELLOW}items.dat not found, downloading ...${NC}"
-  curl -fSL -o items.dat "$BASE_URL/resources/items.dat" || {
-    echo "${RED}Failed to download items.dat${NC}" >&2
+  echo -e "${YELLOW}[*] items.dat not found, downloading ...${NC}"
+  curl -fsSL -o items.dat "$BASE_URL/resources/items.dat" || {
+    echo -e "${RED}[!] Failed to download items.dat${NC}" >&2
     exit 1
   }
-  echo "${GREEN}items.dat saved: $(pwd)/items.dat${NC}"
+  echo -e "${GREEN}[+] Saved: $(pwd)/items.dat${NC}"
 else
-  echo "${YELLOW}items.dat exists, skipping.${NC}"
+  echo -e "${YELLOW}[-] items.dat exists, skipping.${NC}"
 fi
 
-echo "${GREEN}Done.${NC}"
+echo -e "${GREEN}[+] Done.${NC}"
