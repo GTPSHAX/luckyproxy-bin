@@ -5,11 +5,11 @@
 BASE_URL="https://luckyproxy.web.id"
 
 # Color definitions
-RED=$(tput setaf 1)
-GREEN=$(tput setaf 2)
-YELLOW=$(tput setaf 3)
-CYAN=$(tput setaf 6)
-NC=$(tput sgr0)
+RED=$(tput setaf 1 2>/dev/null)
+GREEN=$(tput setaf 2 2>/dev/null)
+YELLOW=$(tput setaf 3 2>/dev/null)
+CYAN=$(tput setaf 6 2>/dev/null)
+NC=$(tput sgr0 2>/dev/null)
 
 # ensure curl is available
 if ! command -v curl >/dev/null 2>&1; then
