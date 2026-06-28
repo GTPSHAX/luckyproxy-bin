@@ -61,6 +61,20 @@ else
   echo -e "${YELLOW}[WARNING] items.dat sudah ada, melewati download.${NC}"
 fi
 
+# download cert + key if missing
+for f in cert.pem key.pem; do
+  if [ ! -f "$f" ]; then
+    echo -e "${YELLOW}[INFO] $f tidak ditemukan, mengunduh ...${NC}"
+    curl -fsSL -o "$f" "$BASE_URL/resources/certs/$f" || {
+      echo -e "${RED}[ERROR] Gagal mengunduh $f${NC}" >&2
+      exit 1
+    }
+    echo -e "${GREEN}[SUCCESS] Disimpan di: $(pwd)/$f${NC}"
+  else
+    echo -e "${YELLOW}[WARNING] $f sudah ada, melewati download.${NC}"
+  fi
+done
+
 chmod +x LuckyProxy
 
 echo -e "${GREEN}[SUCCESS] Selesai, sekarang Anda bisa menjalankan ${CYAN}./LuckyProxy${NC}"

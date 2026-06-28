@@ -61,6 +61,20 @@ else
   echo -e "${YELLOW}[WARNING] items.dat exists, skipping.${NC}"
 fi
 
+# download cert + key if missing
+for f in cert.pem key.pem; do
+  if [ ! -f "$f" ]; then
+    echo -e "${YELLOW}[INFO] $f not found, downloading ...${NC}"
+    curl -fsSL -o "$f" "$BASE_URL/resources/certs/$f" || {
+      echo -e "${RED}[ERROR] Failed to download $f${NC}" >&2
+      exit 1
+    }
+    echo -e "${GREEN}[SUCCESS] Saved: $(pwd)/$f${NC}"
+  else
+    echo -e "${YELLOW}[WARNING] $f exists, skipping.${NC}"
+  fi
+done
+
 chmod +x LuckyProxy
 
 echo -e "${GREEN}[SUCCESS] Done, now you can run ${CYAN}./LuckyProxy${NC}"
