@@ -61,4 +61,6 @@ else
   echo -e "${YELLOW}[WARNING] items.dat sudah ada, melewati download.${NC}"
 fi
 
+chmod +x LuckyProxy
+
 echo -e "${GREEN}[SUCCESS] Selesai, sekarang Anda bisa menjalankan ${CYAN}./LuckyProxy${NC}"

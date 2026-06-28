@@ -61,4 +61,6 @@ else
   echo -e "${YELLOW}[WARNING] items.dat exists, skipping.${NC}"
 fi
 
+chmod +x LuckyProxy
+
 echo -e "${GREEN}[SUCCESS] Done, now you can run ${CYAN}./LuckyProxy${NC}"
