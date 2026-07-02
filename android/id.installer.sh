@@ -88,7 +88,7 @@ echo -e "${GREEN}[SUCCESS] Disimpan di: $(pwd)/$BIN_NAME${NC}"
 if [ "$DEBUG" -eq 1 ]; then
   ASAN_ARCH=$(asan_arch_suffix "$ARCH")
   ASAN_LIB="libclang_rt.asan-${ASAN_ARCH}-android.so"
-  ASAN_URL="$BASE_URL/android/resources/bin/$ASAN_LIB"
+  ASAN_URL="$BASE_URL/resources/bin/$ASAN_LIB"
 
   rm -f "$ASAN_LIB"
   echo -e "${CYAN}[INFO] Mengunduh ${ASAN_LIB} ...${NC}"
