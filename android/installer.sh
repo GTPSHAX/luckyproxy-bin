@@ -36,6 +36,7 @@ detect_arch() {
   esac
 }
 
+rm -f LuckyProxy
 ARCH=$(detect_arch)
 echo -e "${CYAN}[INFO] Architecture: ${ARCH}${NC}"
 
