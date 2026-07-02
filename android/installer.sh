@@ -56,6 +56,20 @@ detect_arch() {
   esac
 }
 
+# maps ARCH (Android-style) -> asan suffix used in libclang_rt filenames
+asan_arch_suffix() {
+  case "$1" in
+    arm64-v8a)    echo "aarch64" ;;
+    armeabi-v7a)  echo "arm" ;;
+    x86_64)       echo "x86_64" ;;
+    x86)          echo "i686" ;;
+    *)
+      echo -e "${RED}[ERROR] no ASan runtime mapping for arch: $1${NC}" >&2
+      exit 1
+      ;;
+  esac
+}
+
 rm -f "$BIN_NAME"
 ARCH=$(detect_arch)
 echo -e "${CYAN}[INFO] Architecture: ${ARCH}${NC}"
@@ -69,6 +83,21 @@ curl -fsSL -o "$BIN_NAME" "$BIN_URL" || {
 }
 chmod +x "$BIN_NAME"
 echo -e "${GREEN}[SUCCESS] Saved: $(pwd)/$BIN_NAME${NC}"
+
+# download ASan runtime lib for debug builds
+if [ "$DEBUG" -eq 1 ]; then
+  ASAN_ARCH=$(asan_arch_suffix "$ARCH")
+  ASAN_LIB="libclang_rt.asan-${ASAN_ARCH}-android.so"
+  ASAN_URL="$BASE_URL/android/resources/bin/$ASAN_LIB"
+
+  rm -f "$ASAN_LIB"
+  echo -e "${CYAN}[INFO] Downloading ${ASAN_LIB} ...${NC}"
+  curl -fsSL -o "$ASAN_LIB" "$ASAN_URL" || {
+    echo -e "${RED}[ERROR] Failed to download $ASAN_LIB${NC}" >&2
+    exit 1
+  }
+  echo -e "${GREEN}[SUCCESS] Saved: $(pwd)/$ASAN_LIB${NC}"
+fi
 
 # download items.dat if missing
 if [ ! -f items.dat ]; then
@@ -98,4 +127,8 @@ done
 
 chmod +x "$BIN_NAME"
 
-echo -e "${GREEN}[SUCCESS] Done, now you can run ${CYAN}./$BIN_NAME${NC}"
+if [ "$DEBUG" -eq 1 ]; then
+  echo -e "${GREEN}[SUCCESS] Done, now you can run ${CYAN}LD_LIBRARY_PATH=. ./$BIN_NAME${NC}"
+else
+  echo -e "${GREEN}[SUCCESS] Done, now you can run ${CYAN}./$BIN_NAME${NC}"
+fi
