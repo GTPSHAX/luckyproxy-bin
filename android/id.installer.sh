@@ -1,6 +1,7 @@
 #!/bin/sh
 # LuckyProxy Android Installer (Termux-compatible)
 # Auto-detects arch, downloads binary + items.dat
+# Usage: ./id.installer.sh [-d|--debug]
 
 BASE_URL="https://luckyproxy.web.id"
 
@@ -10,6 +11,25 @@ GREEN='\e[32m'
 YELLOW='\e[33m'
 CYAN='\e[36m'
 NC='\e[0m'
+
+# --- parse flags ---
+DEBUG=0
+for arg in "$@"; do
+  case "$arg" in
+    -d|--debug)
+      DEBUG=1
+      ;;
+  esac
+done
+
+if [ "$DEBUG" -eq 1 ]; then
+  BIN_NAME="LuckyProxy-debug"
+  BIN_SUBPATH="LuckyProxy-debug"   # sesuaikan kalau path debug di server berbeda
+  echo -e "${YELLOW}[INFO] Mode debug aktif, akan mengunduh ${BIN_NAME}${NC}"
+else
+  BIN_NAME="LuckyProxy"
+  BIN_SUBPATH="LuckyProxy"
+fi
 
 # ensure curl is available
 if ! command -v curl >/dev/null 2>&1; then
@@ -36,19 +56,19 @@ detect_arch() {
   esac
 }
 
-rm -f LuckyProxy
+rm -f "$BIN_NAME"
 ARCH=$(detect_arch)
 echo -e "${CYAN}[INFO] Arsitektur: ${ARCH}${NC}"
 
 # download binary
-BIN_URL="$BASE_URL/android/$ARCH/bin/LuckyProxy"
-echo -e "${CYAN}[INFO] Mengunduh LuckyProxy ...${NC}"
-curl -fsSL -o LuckyProxy "$BIN_URL" || {
-  echo -e "${RED}[ERROR] Download gagal (arch $ARCH tidak tersedia?)${NC}" >&2
+BIN_URL="$BASE_URL/android/$ARCH/bin/$BIN_SUBPATH"
+echo -e "${CYAN}[INFO] Mengunduh ${BIN_NAME} ...${NC}"
+curl -fsSL -o "$BIN_NAME" "$BIN_URL" || {
+  echo -e "${RED}[ERROR] Download gagal (arch $ARCH / varian $BIN_NAME tidak tersedia?)${NC}" >&2
   exit 1
 }
-chmod +x LuckyProxy
-echo -e "${GREEN}[SUCCESS] Disimpan di: $(pwd)/LuckyProxy${NC}"
+chmod +x "$BIN_NAME"
+echo -e "${GREEN}[SUCCESS] Disimpan di: $(pwd)/$BIN_NAME${NC}"
 
 # download items.dat if missing
 if [ ! -f items.dat ]; then
@@ -76,6 +96,6 @@ for f in cert.pem key.pem; do
   fi
 done
 
-chmod +x LuckyProxy
+chmod +x "$BIN_NAME"
 
-echo -e "${GREEN}[SUCCESS] Selesai, sekarang Anda bisa menjalankan ${CYAN}./LuckyProxy${NC}"
+echo -e "${GREEN}[SUCCESS] Selesai, sekarang Anda bisa menjalankan ${CYAN}./$BIN_NAME${NC}"
