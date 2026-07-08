@@ -46,7 +46,7 @@ detect_arch() {
 
   case "$arch" in
     aarch64|arm64-v8a)            echo "arm64-v8a" ;;
-    armv7l|armeabi-v7a|armeabi)   echo "armeabi-v7a" ;;
+    armv7l|armv8l|armeabi-v7a|armeabi)   echo "armeabi-v7a" ;;
     x86_64|amd64)                 echo "x86_64" ;;
     i686|i386|x86)                echo "x86" ;;
     *)
