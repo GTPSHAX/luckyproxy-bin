@@ -1,7 +1,7 @@
 #!/bin/sh
 # LuckyProxy Android Installer (Termux-compatible)
 # Auto-detects arch, downloads binary + items.dat
-# Usage: ./id.installer.sh [-d|--debug]
+# Usage: ./id.installer.sh [-d|--debug] [-a|--arch <arch>]
 
 BASE_URL="https://luckyproxy.web.id"
 
@@ -14,10 +14,19 @@ NC='\e[0m'
 
 # --- parse flags ---
 DEBUG=0
-for arg in "$@"; do
-  case "$arg" in
+ARCH_OVERRIDE=""
+while [ $# -gt 0 ]; do
+  case "$1" in
     -d|--debug)
       DEBUG=1
+      shift
+      ;;
+    -a|--arch)
+      ARCH_OVERRIDE="$2"
+      shift 2
+      ;;
+    *)
+      shift
       ;;
   esac
 done
@@ -71,7 +80,17 @@ asan_arch_suffix() {
 }
 
 rm -f "$BIN_NAME"
-ARCH=$(detect_arch)
+if [ -n "$ARCH_OVERRIDE" ]; then
+  case "$ARCH_OVERRIDE" in
+    arm64-v8a|armeabi-v7a|x86_64|x86) ARCH="$ARCH_OVERRIDE" ;;
+    *)
+      echo -e "${RED}[ERROR] arch tidak valid: $ARCH_OVERRIDE (valid: arm64-v8a, armeabi-v7a, x86_64, x86)${NC}" >&2
+      exit 1
+      ;;
+  esac
+else
+  ARCH=$(detect_arch)
+fi
 echo -e "${CYAN}[INFO] Arsitektur: ${ARCH}${NC}"
 
 # download binary

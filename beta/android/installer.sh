@@ -10,10 +10,19 @@ CYAN='\e[36m'
 NC='\e[0m'
 
 DEBUG=0
-for arg in "$@"; do
-  case "$arg" in
+ARCH_OVERRIDE=""
+while [ $# -gt 0 ]; do
+  case "$1" in
     -d|--debug)
       DEBUG=1
+      shift
+      ;;
+    -a|--arch)
+      ARCH_OVERRIDE="$2"
+      shift 2
+      ;;
+    *)
+      shift
       ;;
   esac
 done
@@ -65,7 +74,17 @@ asan_arch_suffix() {
 
 rm -f "$BIN_NAME"
 mkdir -p "$RESOURCE_DIR"
-ARCH=$(detect_arch)
+if [ -n "$ARCH_OVERRIDE" ]; then
+  case "$ARCH_OVERRIDE" in
+    arm64-v8a|armeabi-v7a|x86_64|x86) ARCH="$ARCH_OVERRIDE" ;;
+    *)
+      echo -e "${RED}[ERROR] invalid arch: $ARCH_OVERRIDE (valid: arm64-v8a, armeabi-v7a, x86_64, x86)${NC}" >&2
+      exit 1
+      ;;
+  esac
+else
+  ARCH=$(detect_arch)
+fi
 echo -e "${CYAN}[INFO] Architecture: ${ARCH}${NC}"
 
 BIN_URL="$BASE_URL/beta/android/$ARCH/bin/$BIN_SUBPATH"
