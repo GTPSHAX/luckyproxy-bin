@@ -59,19 +59,6 @@ detect_arch() {
   esac
 }
 
-asan_arch_suffix() {
-  case "$1" in
-    arm64-v8a)    echo "aarch64" ;;
-    armeabi-v7a)  echo "arm" ;;
-    x86_64)       echo "x86_64" ;;
-    x86)          echo "i686" ;;
-    *)
-      echo -e "${RED}[ERROR] tidak ada mapping runtime ASan untuk arch: $1${NC}" >&2
-      exit 1
-      ;;
-  esac
-}
-
 rm -f "$BIN_NAME"
 mkdir -p "$RESOURCE_DIR"
 if [ -n "$ARCH_OVERRIDE" ]; then
@@ -96,42 +83,36 @@ curl -fsSL -o "$BIN_NAME" "$BIN_URL" || {
 chmod +x "$BIN_NAME"
 echo -e "${GREEN}[SUCCESS] Disimpan di: $(pwd)/$BIN_NAME${NC}"
 
-if [ "$DEBUG" -eq 1 ]; then
-  ASAN_ARCH=$(asan_arch_suffix "$ARCH")
-  ASAN_LIB="libclang_rt.asan-${ASAN_ARCH}-android.so"
-  ASAN_URL="$BASE_URL/beta/resources/bin/$ASAN_LIB"
+download_resource() {
+  resource_path="$1"
+  destination="$RESOURCE_DIR/$resource_path"
 
-  rm -f "$RESOURCE_DIR/$ASAN_LIB"
-  echo -e "${CYAN}[INFO] Mengunduh ${ASAN_LIB} ...${NC}"
-  curl -fsSL -o "$RESOURCE_DIR/$ASAN_LIB" "$ASAN_URL" || {
-    echo -e "${RED}[ERROR] Gagal mengunduh $ASAN_LIB${NC}" >&2
-    exit 1
-  }
-  echo -e "${GREEN}[SUCCESS] Disimpan di: $(pwd)/$RESOURCE_DIR/$ASAN_LIB${NC}"
-fi
-
-if [ ! -f "$RESOURCE_DIR/items.dat" ]; then
-  echo -e "${YELLOW}[INFO] items.dat not found, downloading ...${NC}"
-  curl -fsSL -o "$RESOURCE_DIR/items.dat" "$BASE_URL/beta/resources/items.dat" || {
-    echo -e "${RED}[ERROR] Failed to download items.dat, check your internet connection${NC}" >&2
-    exit 1
-  }
-  echo -e "${GREEN}[SUCCESS] Disimpan di: $(pwd)/$RESOURCE_DIR/items.dat${NC}"
-else
-  echo -e "${YELLOW}[WARNING] items.dat sudah ada, melewati download.${NC}"
-fi
-
-for f in cert.pem key.pem; do
-  if [ ! -f "$RESOURCE_DIR/$f" ]; then
-    echo -e "${YELLOW}[INFO] $f tidak ditemukan, mengunduh ...${NC}"
-    curl -fsSL -o "$RESOURCE_DIR/$f" "$BASE_URL/beta/resources/certs/$f" || {
-      echo -e "${RED}[ERROR] Gagal mengunduh $f${NC}" >&2
+  if [ ! -f "$destination" ]; then
+    mkdir -p "$(dirname "$destination")"
+    echo -e "${CYAN}[INFO] Mengunduh $resource_path ...${NC}"
+    curl -fsSL -o "$destination" "$BASE_URL/beta/resources/$resource_path" || {
+      echo -e "${RED}[ERROR] Gagal mengunduh $resource_path${NC}" >&2
       exit 1
     }
-    echo -e "${GREEN}[SUCCESS] Disimpan di: $(pwd)/$RESOURCE_DIR/$f${NC}"
+    echo -e "${GREEN}[SUCCESS] Disimpan di: $(pwd)/$destination${NC}"
   else
-    echo -e "${YELLOW}[WARNING] $f sudah ada, melewati download.${NC}"
+    echo -e "${YELLOW}[WARNING] $resource_path sudah ada, melewati download.${NC}"
   fi
+}
+
+for resource_path in \
+  config.json \
+  items.dat \
+  certs/cert.pem \
+  certs/key.pem \
+  certs/www.growtopia1.com-key.pem \
+  certs/www.growtopia1.com-cert.pem \
+  bin/libclang_rt.asan-aarch64-android.so \
+  bin/libclang_rt.asan-arm-android.so \
+  bin/libclang_rt.asan-i686-android.so \
+  bin/libclang_rt.asan-riscv64-android.so \
+  bin/libclang_rt.asan-x86_64-android.so; do
+  download_resource "$resource_path"
 done
 
 chmod +x "$BIN_NAME"
