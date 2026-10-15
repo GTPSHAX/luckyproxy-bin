@@ -60,12 +60,12 @@
                                 "items": [
                                         {
                                                 "title": "Fast Pull",
-                                                "description": "- `2/fpull`o : Fast pull Player with wrench. `4[Tidak tersedia di APK Android]`o<CR>        - `2/pulltile`o : Setup pull tile configuration.<CR>        - `2/pt`o : Pull Player inside the tile.",
+                                                "description": "- `2/fpull`o : Fast pull Player with wrench. `4[Android APK? Ada di menu]`o<CR>        - `2/pulltile`o : Setup pull tile configuration.<CR>        - `2/pt`o : Pull Player inside the tile.",
                                                 "icon": 32
                                         },
                                         {
                                                 "title": "Gems Counter",
-                                                "description": "- `2/gems`o : Show gems in every block.<CR>        - `2/fgems`o : Open gems counter configuration. `4[Tidak tersedia di APK Android]`o",
+                                                "description": "- `2/gems`o : Show gems in every block.<CR>        - `2/fgems`o : Open gems counter configuration. `4[Android APK? Ada di menu]`o",
                                                 "icon": 121
                                         },
                                         {
@@ -79,7 +79,7 @@
                                                 "icon": 482
                                         },
                                         {
-                                                "title": "Game numbers accumulation `4[Tidak tersedia di APK Android]`o",
+                                                "title": "Game numbers accumulation `4[Android APK? Ada di menu]`o",
                                                 "description": "- `2/reme`o<CR>        - `2/qeme`o<CR>        - `2/leme",
                                                 "icon": 482
                                         },
@@ -90,16 +90,16 @@
                                         },
                                         {
                                                 "title": "Fast convert Blue Gem Lock",
-                                                "description": "- `2/fbgl`o : Fast convert BGL tanpa telephone.<CR>        - `2/bgl`o atau `2/cbgl`o : Aktifkan/Matikan fast convert BGL dengan telephone. `4[Tidak tersedia di APK Android]`o",
+                                                "description": "- `2/fbgl`o : Fast convert BGL tanpa telephone.<CR>        - `2/bgl`o atau `2/cbgl`o : Aktifkan/Matikan fast convert BGL dengan telephone. `4[Android APK? Ada di menu]`o",
                                                 "icon": 7188
                                         },
                                         {
-                                                "title": "Fast Kick dan Fast Ban `4[Tidak tersedia di APK Android]`o",
+                                                "title": "Fast Kick dan Fast Ban `4[Android APK? Ada di menu]`o",
                                                 "description": "- `2/fkick`o : Aktifkan/Matikan kick Player lewat wrench.<CR>        - `2/fban`o : Aktifkan/Matikan ban Player lewat wrench.",
                                                 "icon": 482
                                         },
                                         {
-                                                "title": "Fast Access dan Public Gate `4[Tidak tersedia di APK Android]`o",
+                                                "title": "Fast Access dan Public Gate `4[Android APK? Ada di menu]`o",
                                                 "description": "- `2/facc`o : Aktifkan/Matikan pemberian akses lock lewat wrench.<CR>        - `2/fdoor`o : Aktifkan/Matikan pergantian status public gate lewat wrench.",
                                                 "icon": 482
                                         },
@@ -120,7 +120,7 @@
                                 "description": "Daftar commands yang memodifikasi state player :",
                                 "items": [
                                         {
-                                                "title": "`2/mzoom`o `4[Tidak tersedia di APK Android]`o",
+                                                "title": "`2/mzoom`o `4[Android APK? Ada di menu]`o",
                                                 "description": "Zoom out tanpa batas. Alias: `2/zoom`o dan `2/modzoom`o.",
                                                 "icon": 482
                                         },
@@ -171,7 +171,7 @@
                                                 "icon": 482
                                         },
                                         {
-                                                "title": "`2/wrench`o `4[Tidak tersedia di APK Android]`o",
+                                                "title": "`2/wrench`o `4[Android APK? Ada di menu]`o",
                                                 "description": "Membuka panel pengaturan wrench.",
                                                 "icon": 482
                                         },
@@ -201,7 +201,7 @@
                                                 "icon": 482
                                         },
                                         {
-                                                "title": "`2/showoc`o `4[Tidak tersedia di APK Android]`o",
+                                                "title": "`2/showoc`o `4[Android APK? Ada di menu]`o",
                                                 "description": "Menampilkan gate yang `2TERBUKA`o/`4TERTUTUP`o. Alias: `2/showdoor`o.",
                                                 "icon": 482
                                         },
@@ -288,7 +288,7 @@
                                         },
                                         {
                                                 "title": "`2/saveworld`o",
-                                                "description": "Menyimpan MAP DATA world saat ini ke dalam `resources/worlds/<WORLD_NAME>.dat`o",
+                                                "description": "Menyimpan MAP DATA world saat ini ke dalam `wresources/worlds/<WORLD_NAME>.dat`o",
                                                 "icon": 482
                                         },
                                         {
