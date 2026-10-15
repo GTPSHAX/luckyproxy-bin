@@ -1,303 +1,303 @@
 {
-    "gazette": {
-        "title": "Mods Detector!",
-        "description": "Kini LuckyProxy memberi notifikasi saat moderator atau guardian terdeteksi masuk ke world kamu. Atur respons yang kamu butuhkan melalui `2/opts`o pada tab `wMods Join`o: ban pemain, ambil drop dalam radius 10 blok, lepaskan akses, atau keluar dari world. Kamu juga bisa membuka `2/hidden`o untuk melihat catatan deteksi dan status online moderator/guardian.",
-        "banner": {
-            "file": "interface/luckyproxy/news_banner.rttex",
-            "message": "Do you want to open the LuckyProxy website using external browser?",
-            "url": "https://www.luckyproxy.web.id/"
-        },
-        "news": [
-            {
-                "title": "What's New?",
-                "description": "Mods Detector hadir dengan pilihan respons otomatis yang bisa digabungkan. Hanya opsi yang aktif yang dijalankan, dengan urutan: `wBan All Players`o, `wAuto Collect`o beserta perjalanan kembali, `wUnaccess World`o, lalu `wLeave World`o. Tekan `2Simpan`o di tab Mods Join agar pilihanmu digunakan juga pada sesi berikutnya.",
-                "items": [
-                    {
-                        "title": "Notifikasi dan pengaturan Mods Join",
-                        "description": "Dapatkan notifikasi dan suara saat moderator/guardian terdeteksi. Buka `2/opts`o, pilih tab `wMods Join`o, lalu aktifkan respons yang kamu inginkan.",
-                        "icon": 16332
-                    },
-                    {
-                        "title": "Ban All Players",
-                        "description": "Ban pemain lain hanya saat kamu memiliki akses admin atau menjadi owner world. Pemain lokal serta nama yang ditandai sebagai owner/admin dikecualikan.",
-                        "icon": 242
-                    },
-                    {
-                        "title": "Auto Collect dalam radius 10 blok",
-                        "description": "Karakter bergerak mengambil drop yang terjangkau dalam radius 10 blok dari posisi awal, lalu kembali ke posisi semula. Drop tanpa jalur pergi-pulang dilewati. Gunakan `2/stopd`o untuk menghentikan proses collect yang sedang aktif.",
-                        "icon": 2034
-                    },
-                    {
-                        "title": "Unaccess World",
-                        "description": "Lepaskan aksesmu dari lock milik orang lain di world saat ini secara otomatis. Lock milikmu sendiri tetap menjadi milikmu. Jika ban atau collect juga aktif, pelepasan akses dilakukan setelah keduanya selesai.",
-                        "icon": 242
-                    },
-                    {
-                        "title": "Leave World",
-                        "description": "Keluar dari world secara otomatis setelah seluruh respons lain yang kamu aktifkan selesai dijalankan. Jika hanya Leave World yang aktif, tidak perlu menunggu aksi lainnya.",
-                        "icon": 3802
-                    },
-                    {
-                        "title": "Catatan moderator dan guardian",
-                        "description": "Gunakan `2/hidden`o untuk melihat catatan deteksi dan status online. Buka detail nama untuk melihat world yang tercatat, lalu pilih tombol world jika ingin bergabung.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "Uji pengaturan dengan /testmod",
-                        "description": "`4Perhatian: /testmod menjalankan aksi nyata, bukan sekadar notifikasi.`o Command ini mengikuti opsi Mods Join yang aktif, termasuk ban pemain, mengambil drop, melepas akses, dan keluar dari world. Periksa pilihanmu di `2/opts`o sebelum mencoba.",
-                        "icon": 482
-                    }
+        "gazette": {
+                "title": "Mods Detector!",
+                "description": "Kini LuckyProxy memberi notifikasi saat moderator atau guardian terdeteksi masuk ke world kamu. Atur respons yang kamu butuhkan melalui `2/opts`o pada tab `wMods Join`o: ban pemain, ambil drop dalam radius 10 blok, lepaskan akses, atau keluar dari world. Kamu juga bisa membuka `2/hidden`o untuk melihat catatan deteksi dan status online moderator/guardian.",
+                "banner": {
+                        "file": "interface/luckyproxy/news_banner.rttex",
+                        "message": "Do you want to open the LuckyProxy website using external browser?",
+                        "url": "https://www.luckyproxy.web.id/"
+                },
+                "news": [
+                        {
+                                "title": "What's New?",
+                                "description": "Mods Detector hadir dengan pilihan respons otomatis yang bisa digabungkan. Hanya opsi yang aktif yang dijalankan, dengan urutan: `wBan All Players`o, `wAuto Collect`o beserta perjalanan kembali, `wUnaccess World`o, lalu `wLeave World`o. Tekan `2Simpan`o di tab Mods Join agar pilihanmu digunakan juga pada sesi berikutnya.",
+                                "items": [
+                                        {
+                                                "title": "Notifikasi dan pengaturan Mods Join",
+                                                "description": "Dapatkan notifikasi dan suara saat moderator/guardian terdeteksi. Buka `2/opts`o, pilih tab `wMods Join`o, lalu aktifkan respons yang kamu inginkan.",
+                                                "icon": 16332
+                                        },
+                                        {
+                                                "title": "Ban All Players",
+                                                "description": "Ban pemain lain hanya saat kamu memiliki akses admin atau menjadi owner world. Pemain lokal serta nama yang ditandai sebagai owner/admin dikecualikan.",
+                                                "icon": 242
+                                        },
+                                        {
+                                                "title": "Auto Collect dalam radius 10 blok",
+                                                "description": "Karakter bergerak mengambil drop yang terjangkau dalam radius 10 blok dari posisi awal, lalu kembali ke posisi semula. Drop tanpa jalur pergi-pulang dilewati. Gunakan `2/stopd`o untuk menghentikan proses collect yang sedang aktif.",
+                                                "icon": 2034
+                                        },
+                                        {
+                                                "title": "Unaccess World",
+                                                "description": "Lepaskan aksesmu dari lock milik orang lain di world saat ini secara otomatis. Lock milikmu sendiri tetap menjadi milikmu. Jika ban atau collect juga aktif, pelepasan akses dilakukan setelah keduanya selesai.",
+                                                "icon": 242
+                                        },
+                                        {
+                                                "title": "Leave World",
+                                                "description": "Keluar dari world secara otomatis setelah seluruh respons lain yang kamu aktifkan selesai dijalankan. Jika hanya Leave World yang aktif, tidak perlu menunggu aksi lainnya.",
+                                                "icon": 3802
+                                        },
+                                        {
+                                                "title": "Catatan moderator dan guardian",
+                                                "description": "Gunakan `2/hidden`o untuk melihat catatan deteksi dan status online. Buka detail nama untuk melihat world yang tercatat, lalu pilih tombol world jika ingin bergabung.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "Uji pengaturan dengan /testmod",
+                                                "description": "`4Perhatian: /testmod menjalankan aksi nyata, bukan sekadar notifikasi.`o Command ini mengikuti opsi Mods Join yang aktif, termasuk ban pemain, mengambil drop, melepas akses, dan keluar dari world. Periksa pilihanmu di `2/opts`o sebelum mencoba.",
+                                                "icon": 482
+                                        }
+                                ]
+                        },
+                        {
+                                "title": "`!Getting started`",
+                                "description": "Kamu dapat memulai mencoba fitur dengan mengetikkan `2/opts`o di chatbox, lalu pilih menu yang ingin kamu coba.",
+                                "items": []
+                        },
+                        {
+                                "title": "Hoster commands",
+                                "description": "Daftar commands yang memudahkan hoster dalam pekerjaan mereka :",
+                                "items": [
+                                        {
+                                                "title": "Fast Pull",
+                                                "description": "- `2/fpull`o : Fast pull Player with wrench. `4[Tidak tersedia di APK Android]`o<CR>        - `2/pulltile`o : Setup pull tile configuration.<CR>        - `2/pt`o : Pull Player inside the tile.",
+                                                "icon": 32
+                                        },
+                                        {
+                                                "title": "Gems Counter",
+                                                "description": "- `2/gems`o : Show gems in every block.<CR>        - `2/fgems`o : Open gems counter configuration. `4[Tidak tersedia di APK Android]`o",
+                                                "icon": 121
+                                        },
+                                        {
+                                                "title": "Semi Auto Hosts",
+                                                "description": "- `2/pos1`o : Set display box for position 1.<CR>        - `2/pos2`o : Set display box for position 2.<CR>        - `2/pos <nomor>`o atau `2/setpos <nomor>`o : Simpan posisi sesuai nomor slot.<CR>        - `2/tax`o atau `2/settax`o : Set tax for every game - Example : `2/tax 2,25`o (Set tax to 2.25%)<CR>        - `2/tp`o atau `2/cp`o : Take dropped locks inside position 1 and position 2.<CR>        - `2/w1`o : Drop Locks yang sudah dikurangi tax ke posisi 1.<CR>        - `2/w2`o : Drop Locks yang sudah dikurangi tax ke posisi 2.<CR>        - `2/w <nomor>`o atau `2/win <nomor>`o : Drop hasil ke slot pilihan.<CR>        - `2/gd`o : Drop Locks yang sudah dikurangi tax didepan kamu.",
+                                                "icon": 758
+                                        },
+                                        {
+                                                "title": "Logs Drop, Collect, and Roulette number",
+                                                "description": "`2/logs`o : Menampilkan logs drop, collect, dan roulette number yang terjadi di world saat ini.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "Game numbers accumulation `4[Tidak tersedia di APK Android]`o",
+                                                "description": "- `2/reme`o<CR>        - `2/qeme`o<CR>        - `2/leme",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "Fast drop Lock's & Arroz",
+                                                "description": "- `2/dw`o (alias `2/dwl`o, `2/cd`o) : Drop World Lock - Contoh : `2/dw5`o (Drop 5 World Lock)<CR>        - `2/dd`o (alias `2/ddl`o) : Drop Diamond Lock - Contoh : `2/dd3`o (Drop 3 Diamond Lock)<CR>        - `2/db`o (alias `2/dbgl`o, `2/dgl`o) : Drop Blue Gem Lock - Contoh : `2/db2`o (Drop 2 Blue Gem Lock)<CR>        - `2/roz`o (alias `2/arroz`o) : Drop Arroz - Contoh : `2/roz10`o (Drop 10 Arroz)<CR>        - `2/daw`o : Drop all WL, DL, and BGL that you have in your inventory.",
+                                                "icon": 242
+                                        },
+                                        {
+                                                "title": "Fast convert Blue Gem Lock",
+                                                "description": "- `2/fbgl`o : Fast convert BGL tanpa telephone.<CR>        - `2/bgl`o atau `2/cbgl`o : Aktifkan/Matikan fast convert BGL dengan telephone. `4[Tidak tersedia di APK Android]`o",
+                                                "icon": 7188
+                                        },
+                                        {
+                                                "title": "Fast Kick dan Fast Ban `4[Tidak tersedia di APK Android]`o",
+                                                "description": "- `2/fkick`o : Aktifkan/Matikan kick Player lewat wrench.<CR>        - `2/fban`o : Aktifkan/Matikan ban Player lewat wrench.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "Fast Access dan Public Gate `4[Tidak tersedia di APK Android]`o",
+                                                "description": "- `2/facc`o : Aktifkan/Matikan pemberian akses lock lewat wrench.<CR>        - `2/fdoor`o : Aktifkan/Matikan pergantian status public gate lewat wrench.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "Auto Accept Access",
+                                                "description": "`2/acc`o : Aktifkan/Matikan penerimaan tawaran akses lock secara otomatis.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "Remove World Access",
+                                                "description": "`2/unacc`o : Lepaskan aksesmu dari lock milik orang lain di world saat ini, termasuk konfirmasinya secara otomatis.",
+                                                "icon": 482
+                                        }
+                                ]
+                        },
+                        {
+                                "title": "Player states commands",
+                                "description": "Daftar commands yang memodifikasi state player :",
+                                "items": [
+                                        {
+                                                "title": "`2/mzoom`o `4[Tidak tersedia di APK Android]`o",
+                                                "description": "Zoom out tanpa batas. Alias: `2/zoom`o dan `2/modzoom`o.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/ag`o",
+                                                "description": "Antygravity - loncat tanpa batas. Alias: `2/antigravity`o.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/nick`o",
+                                                "description": "Mengganti nickname kamu - Contoh : `2/nick LuckyProxy`o (Ganti nickname menjadi LuckyProxy)",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/skin`o",
+                                                "description": "Mengganti skin kamu - Contoh : `2/skin 123456`o (Ganti skin menjadi skin dengan Color Code 123456)",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/pf`o",
+                                                "description": "Aktifkan/Matikan Pathfinder untuk bantuan bergerak menuju tujuan. Alias: `2/pathfinder`o.",
+                                                "icon": 482
+                                        }
+                                ]
+                        },
+                        {
+                                "title": "General commands",
+                                "description": "Daftar commands yang umum digunakan :",
+                                "items": [
+                                        {
+                                                "title": "`2/proxy`o",
+                                                "description": "Membuka Gazette LuckyProxy dengan berita dan daftar command terbaru. Alias: `2/proxyhelp`o.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/options`o",
+                                                "description": "Membuka pengaturan World, Visual, SOCKS5, Automation, Mods Join, dan bahasa. Alias: `2/opts`o.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/socks5`o",
+                                                "description": "Mengatur SOCKS5 proxy - Contoh : `2/socks5 [host:port:username:password]`o SOCKS5 diterapkan saat login berikutnya. `2/socks5`o untuk menonaktifkan SOCKS5.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/hotkeys`o",
+                                                "description": "Membuka panel pengaturan hotkeys.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/wrench`o `4[Tidak tersedia di APK Android]`o",
+                                                "description": "Membuka panel pengaturan wrench.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/vf`o",
+                                                "description": "Membuka panel daftar lokasi vend yang ada pada semua World di server. Alias: `2/vendfind`o.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/gs`o",
+                                                "description": "Membuka panel Growscan 3000. Alias: `2/growscan`o dan `2/gscan`o.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/find`o",
+                                                "description": "Panel untuk mencari item yang ada pada game - Contoh : `2/find dirt`o (Mencari semua item yang mengandung kata dirt)",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/hidden`o",
+                                                "description": "Menampilkan logs Supermoderators, Moderators, dan Guardians yang sedang online.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/testmod`o",
+                                                "description": "Menjalankan notifikasi dan aksi Mods Join yang aktif melalui `2/opts`o secara nyata, bukan hanya simulasi. Aksi dapat melakukan ban, mengambil drop, melepas akses, dan keluar dari world.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/showoc`o `4[Tidak tersedia di APK Android]`o",
+                                                "description": "Menampilkan gate yang `2TERBUKA`o/`4TERTUTUP`o. Alias: `2/showdoor`o.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/warp`o",
+                                                "description": "Warp ke World tujuan - Contoh : `2/warp luckyproxy`o (Warp ke World LUCKYPROXY)",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/back`o",
+                                                "description": "Kembali ke World's sebelumnya.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/re`o",
+                                                "description": "Menjalankan ulang command sebelumnya.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/cmdsearch`o",
+                                                "description": "Panel untuk mencari daftar command yang ada di proxy. Alias: `2/searchcmd`o dan `2/scmd`o.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/exit`o",
+                                                "description": "Keluar dari world.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/fastdrop`o",
+                                                "description": "Drop item dengan cepat. Alias: `2/fd`o.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/da`o",
+                                                "description": "Drop all item yang ada di inventory. Alias: `2/dropall`o.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/stopd`o",
+                                                "description": "Menghentikan Auto Collect Mods Join yang aktif atau pemilihan tile Pull Tile. Tidak menghentikan semua fitur proxy.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/spam`o",
+                                                "description": "Membuka pengaturan pesan otomatis. Gunakan `2/spam <pesan>`o untuk memulai dengan pesan pilihan.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2//`o",
+                                                "description": "Aktifkan/Matikan pengiriman pesan otomatis dengan pengaturan yang sudah disimpan.",
+                                                "icon": 482
+                                        }
+                                ]
+                        },
+                        {
+                                "title": "Developer commands",
+                                "description": "Daftar commands yang digunakan untuk pengembangan proxy :",
+                                "items": [
+                                        {
+                                                "title": "`2/debug`o",
+                                                "description": "Panel untuk mengatur jenis packet yang ingin di debug.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/effect`o",
+                                                "description": "Spawn particle effect pada posisimu - Contoh : `2/effect 1`o (Spawn particle effect dengan ID 1)",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/effectv2`o",
+                                                "description": "Spawn particle effect pada posisimu - Contoh : `2/effectv2 1`o (Spawn particle effect dengan ID 1)",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/testdialog`o",
+                                                "description": "Membuka dialog dari kerangka yang sudah disiapkan pada file `1dialog.txt`o",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/showallowpath`o",
+                                                "description": "Menampilkan tile yang dapat dilewati oleh pathfinder.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/saveworld`o",
+                                                "description": "Menyimpan MAP DATA world saat ini ke dalam `resources/worlds/<WORLD_NAME>.dat`o",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/builddialog`o",
+                                                "description": "Membuka panel untuk membangun dialog game.",
+                                                "icon": 482
+                                        }
+                                ]
+                        }
                 ]
-            },
-            {
-                "title": "`!Getting started`",
-                "description": "Kamu dapat memulai mencoba fitur dengan mengetikkan `2/opts`o di chatbox, lalu pilih menu yang ingin kamu coba.",
-                "items": []
-            },
-            {
-                "title": "Hoster commands",
-                "description": "Daftar commands yang memudahkan hoster dalam pekerjaan mereka :",
-                "items": [
-                    {
-                        "title": "Fast Pull",
-                        "description": "- `2/fpull`o : Fast pull Player with wrench. `4[Tidak tersedia di APK Android]`o<CR>    - `2/pulltile`o : Setup pull tile configuration.<CR>    - `2/pt`o : Pull Player inside the tile.",
-                        "icon": 32
-                    },
-                    {
-                        "title": "Gems Counter",
-                        "description": "- `2/gems`o : Show gems in every block.<CR>    - `2/fgems`o : Open gems counter configuration. `4[Tidak tersedia di APK Android]`o",
-                        "icon": 121
-                    },
-                    {
-                        "title": "Semi Auto Hosts",
-                        "description": "- `2/pos1`o : Set display box for position 1.<CR>    - `2/pos2`o : Set display box for position 2.<CR>    - `2/pos <nomor>`o atau `2/setpos <nomor>`o : Simpan posisi sesuai nomor slot.<CR>    - `2/tax`o atau `2/settax`o : Set tax for every game - Example : `2/tax 2,25`o (Set tax to 2.25%)<CR>    - `2/tp`o atau `2/cp`o : Take dropped locks inside position 1 and position 2.<CR>    - `2/w1`o : Drop Locks yang sudah dikurangi tax ke posisi 1.<CR>    - `2/w2`o : Drop Locks yang sudah dikurangi tax ke posisi 2.<CR>    - `2/w <nomor>`o atau `2/win <nomor>`o : Drop hasil ke slot pilihan.<CR>    - `2/gd`o : Drop Locks yang sudah dikurangi tax didepan kamu.",
-                        "icon": 758
-                    },
-                    {
-                        "title": "Logs Drop, Collect, and Roulette number",
-                        "description": "`2/logs`o : Menampilkan logs drop, collect, dan roulette number yang terjadi di world saat ini.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "Game numbers accumulation `4[Tidak tersedia di APK Android]`o",
-                        "description": "- `2/reme`o<CR>    - `2/qeme`o<CR>    - `2/leme",
-                        "icon": 482
-                    },
-                    {
-                        "title": "Fast drop Lock's & Arroz",
-                        "description": "- `2/dw`o (alias `2/dwl`o, `2/cd`o) : Drop World Lock - Contoh : `2/dw5`o (Drop 5 World Lock)<CR>    - `2/dd`o (alias `2/ddl`o) : Drop Diamond Lock - Contoh : `2/dd3`o (Drop 3 Diamond Lock)<CR>    - `2/db`o (alias `2/dbgl`o, `2/dgl`o) : Drop Blue Gem Lock - Contoh : `2/db2`o (Drop 2 Blue Gem Lock)<CR>    - `2/roz`o (alias `2/arroz`o) : Drop Arroz - Contoh : `2/roz10`o (Drop 10 Arroz)<CR>    - `2/daw`o : Drop all WL, DL, and BGL that you have in your inventory.",
-                        "icon": 242
-                    },
-                    {
-                        "title": "Fast convert Blue Gem Lock",
-                        "description": "- `2/fbgl`o : Fast convert BGL tanpa telephone.<CR>    - `2/bgl`o atau `2/cbgl`o : Aktifkan/Matikan fast convert BGL dengan telephone. `4[Tidak tersedia di APK Android]`o",
-                        "icon": 7188
-                    },
-                    {
-                        "title": "Fast Kick dan Fast Ban `4[Tidak tersedia di APK Android]`o",
-                        "description": "- `2/fkick`o : Aktifkan/Matikan kick Player lewat wrench.<CR>    - `2/fban`o : Aktifkan/Matikan ban Player lewat wrench.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "Fast Access dan Public Gate `4[Tidak tersedia di APK Android]`o",
-                        "description": "- `2/facc`o : Aktifkan/Matikan pemberian akses lock lewat wrench.<CR>    - `2/fdoor`o : Aktifkan/Matikan pergantian status public gate lewat wrench.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "Auto Accept Access",
-                        "description": "`2/acc`o : Aktifkan/Matikan penerimaan tawaran akses lock secara otomatis.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "Remove World Access",
-                        "description": "`2/unacc`o : Lepaskan aksesmu dari lock milik orang lain di world saat ini, termasuk konfirmasinya secara otomatis.",
-                        "icon": 482
-                    }
-                ]
-            },
-            {
-                "title": "Player states commands",
-                "description": "Daftar commands yang memodifikasi state player :",
-                "items": [
-                    {
-                        "title": "`2/mzoom`o `4[Tidak tersedia di APK Android]`o",
-                        "description": "Zoom out tanpa batas. Alias: `2/zoom`o dan `2/modzoom`o.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/ag`o",
-                        "description": "Antygravity - loncat tanpa batas. Alias: `2/antigravity`o.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/nick`o",
-                        "description": "Mengganti nickname kamu - Contoh : `2/nick LuckyProxy`o (Ganti nickname menjadi LuckyProxy)",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/skin`o",
-                        "description": "Mengganti skin kamu - Contoh : `2/skin 123456`o (Ganti skin menjadi skin dengan Color Code 123456)",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/pf`o",
-                        "description": "Aktifkan/Matikan Pathfinder untuk bantuan bergerak menuju tujuan. Alias: `2/pathfinder`o.",
-                        "icon": 482
-                    }
-                ]
-            },
-            {
-                "title": "General commands",
-                "description": "Daftar commands yang umum digunakan :",
-                "items": [
-                    {
-                        "title": "`2/proxy`o",
-                        "description": "Membuka Gazette LuckyProxy dengan berita dan daftar command terbaru. Alias: `2/proxyhelp`o.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/options`o",
-                        "description": "Membuka pengaturan World, Visual, SOCKS5, Automation, Mods Join, dan bahasa. Alias: `2/opts`o.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/socks5`o",
-                        "description": "Mengatur SOCKS5 proxy - Contoh : `2/socks5 [host:port:username:password]`o SOCKS5 diterapkan saat login berikutnya. `2/socks5`o untuk menonaktifkan SOCKS5.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/hotkeys`o",
-                        "description": "Membuka panel pengaturan hotkeys.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/wrench`o `4[Tidak tersedia di APK Android]`o",
-                        "description": "Membuka panel pengaturan wrench.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/vf`o",
-                        "description": "Membuka panel daftar lokasi vend yang ada pada semua World di server. Alias: `2/vendfind`o.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/gs`o",
-                        "description": "Membuka panel Growscan 3000. Alias: `2/growscan`o dan `2/gscan`o.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/find`o",
-                        "description": "Panel untuk mencari item yang ada pada game - Contoh : `2/find dirt`o (Mencari semua item yang mengandung kata dirt)",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/hidden`o",
-                        "description": "Menampilkan logs Supermoderators, Moderators, dan Guardians yang sedang online.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/testmod`o",
-                        "description": "Menjalankan notifikasi dan aksi Mods Join yang aktif melalui `2/opts`o secara nyata, bukan hanya simulasi. Aksi dapat melakukan ban, mengambil drop, melepas akses, dan keluar dari world.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/showoc`o `4[Tidak tersedia di APK Android]`o",
-                        "description": "Menampilkan gate yang `2TERBUKA`o/`4TERTUTUP`o. Alias: `2/showdoor`o.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/warp`o",
-                        "description": "Warp ke World tujuan - Contoh : `2/warp luckyproxy`o (Warp ke World LUCKYPROXY)",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/back`o",
-                        "description": "Kembali ke World's sebelumnya.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/re`o",
-                        "description": "Menjalankan ulang command sebelumnya.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/cmdsearch`o",
-                        "description": "Panel untuk mencari daftar command yang ada di proxy. Alias: `2/searchcmd`o dan `2/scmd`o.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/exit`o",
-                        "description": "Keluar dari world.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/fastdrop`o",
-                        "description": "Drop item dengan cepat. Alias: `2/fd`o.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/da`o",
-                        "description": "Drop all item yang ada di inventory. Alias: `2/dropall`o.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/stopd`o",
-                        "description": "Menghentikan Auto Collect Mods Join yang aktif atau pemilihan tile Pull Tile. Tidak menghentikan semua fitur proxy.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/spam`o",
-                        "description": "Membuka pengaturan pesan otomatis. Gunakan `2/spam <pesan>`o untuk memulai dengan pesan pilihan.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2//`o",
-                        "description": "Aktifkan/Matikan pengiriman pesan otomatis dengan pengaturan yang sudah disimpan.",
-                        "icon": 482
-                    }
-                ]
-            },
-            {
-                "title": "Developer commands",
-                "description": "Daftar commands yang digunakan untuk pengembangan proxy :",
-                "items": [
-                    {
-                        "title": "`2/debug`o",
-                        "description": "Panel untuk mengatur jenis packet yang ingin di debug.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/effect`o",
-                        "description": "Spawn particle effect pada posisimu - Contoh : `2/effect 1`o (Spawn particle effect dengan ID 1)",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/effectv2`o",
-                        "description": "Spawn particle effect pada posisimu - Contoh : `2/effectv2 1`o (Spawn particle effect dengan ID 1)",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/testdialog`o",
-                        "description": "Membuka dialog dari kerangka yang sudah disiapkan pada file `1dialog.txt`o",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/showallowpath`o",
-                        "description": "Menampilkan tile yang dapat dilewati oleh pathfinder.",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/saveworld`o",
-                        "description": "Menyimpan MAP DATA world saat ini ke dalam `resources/worlds/<WORLD_NAME>.dat`o",
-                        "icon": 482
-                    },
-                    {
-                        "title": "`2/builddialog`o",
-                        "description": "Membuka panel untuk membangun dialog game.",
-                        "icon": 482
-                    }
-                ]
-            }
-        ]
-    }
+        }
 }
