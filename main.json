@@ -5,7 +5,7 @@
         "banner": {
             "file": "interface/luckyproxy/news_banner.rttex",
             "message": "Do you want to open the LuckyProxy website using external browser?",
-            "url": "https://www.example.com/"
+            "url": "https://www.luckyproxy.web.id/"
         },
         "news": [
             {
