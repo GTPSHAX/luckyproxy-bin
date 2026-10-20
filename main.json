@@ -1,11 +1,12 @@
 {
         "gazette": {
-                "title": "Mods Detector!",
-                "description": "Kini LuckyProxy memberi notifikasi saat moderator atau guardian terdeteksi masuk ke world kamu. Atur respons yang kamu butuhkan melalui `2/opts`o pada tab `wMods Join`o: ban pemain, ambil drop dalam radius 10 blok, lepaskan akses, atau keluar dari world. Kamu juga bisa membuka `2/hidden`o untuk melihat catatan deteksi dan status online moderator/guardian.",
+                "title": "New Commands & Options!",
+                "description": "Bagi lock dengan `2/split`o, panggil saver lewat `2/sp`o, dan atur Pathfinder lewat `2/pf`o. Ada juga Auto convert WL ke DL, Anti Punch, dan Anti Bounce di `2/opts`o. Cek poin update di bawah, lalu pilih fitur yang cocok buat kamu!",
                 "banner": {
                         "file": "interface/luckyproxy/news_banner.rttex",
                         "message": "Do you want to open the TeamFox website using external browser?",
-                        "url": "https://teamfoxgt.com/"
+                        "url": "https://teamfoxgt.com/",
+                        "hash": -258000010
                 },
                 "news": [
                         {
@@ -15,6 +16,47 @@
                         },
                         {
                                 "title": "What's New?",
+                                "description": "Command makin praktis, options makin lengkap. Ini poin utama update LuckyProxy terbaru:",
+                                "items": [
+                                        {
+                                                "title": "Split lock sesuai persentase",
+                                                "description": "`2/split <persen>`o menghitung total WL, DL, dan BGL dalam nilai WL, lalu drop bagian yang kamu pilih. Contoh: 2 DL + 100 WL dengan `2/split 70`o menghasilkan drop senilai 210 WL dan sisa 90 WL. Bisa pakai `w70%`o atau `w12,5`o; pecahan WL dibulatkan ke bawah. Rincian hitungannya tampil di overlay, dan nilai negatif ditolak.",
+                                                "icon": 242
+                                        },
+                                        {
+                                                "title": "Saver tinggal panggil",
+                                                "description": "Simpan GrowID saver lewat `2/saver <GrowID>`o, lalu gunakan `2/saverpull`o atau alias `2/sp`o untuk pull selama 2 detik dengan jeda 250 ms, maksimal 8 kali. GrowID tersimpan untuk sesi berikutnya. Gunakan `2/stopd`o jika ingin menghentikan pull.",
+                                                "icon": 32
+                                        },
+                                        {
+                                                "title": "Auto convert WL ke DL",
+                                                "description": "Aktifkan lewat `2/opts`o pada tab `wAuto`o. Setelah kamu collect WL, konversi dijalankan jika inventory berisi lebih dari 100 WL dan kurang dari 200 DL. Pilihan ini tersimpan; default-nya nonaktif.",
+                                                "icon": 242
+                                        },
+                                        {
+                                                "title": "Pathfinder punya pengaturan sendiri",
+                                                "description": "`2/pf`o atau `2/pathfinder`o kini membuka pengaturan `wdelay_walking`o dan `wdelay_batch`o. Jalur lebih menghindari bahaya, pergerakan di air diperbarui, dan melepas Shift tidak membatalkan perjalanan yang sudah berjalan. `4Pengaturan delay bukan jaminan aman dari ban.`o",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "Anti Punch & Anti Bounce",
+                                                "description": "Ada di tab pertama `2/opts`o. `wAnti Punch`o: pukul aja, aku mah santai... `wAnti Bounce`o: aku bukan bola bekel! `4[Easy System Ban]`o Keduanya default OFF, tidak disimpan ke config, tetap aktif saat keluar/pindah world, dan reset saat disconnect atau proxy restart.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "Akun tambahan dengan /new",
+                                                "description": "Khusus Windows: gunakan `2/new`o untuk membuka Growtopia tambahan tanpa menutup akun yang sudah berjalan. Cukup dari `wLuckyProxy.exe`o, tanpa script Python terpisah.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "Tutorial pemula otomatis",
+                                                "description": "Tutorial akun baru ditangani otomatis, termasuk langkah `wSet Home`o. Biar akun baru cepat siap diajak main!",
+                                                "icon": 242
+                                        }
+                                ]
+                        },
+                        {
+                                "title": "Mods Detector",
                                 "description": "Mods Detector hadir dengan pilihan respons otomatis yang bisa digabungkan. Hanya opsi yang aktif yang dijalankan, dengan urutan: `wBan All Players`o, `wAuto Collect`o beserta perjalanan kembali, `wUnaccess World`o, lalu `wLeave World`o. Tekan `2Simpan`o di tab Mods Join agar pilihanmu digunakan juga pada sesi berikutnya.",
                                 "items": [
                                         {
@@ -69,6 +111,11 @@
                                                 "icon": 32
                                         },
                                         {
+                                                "title": "Saver Pull",
+                                                "description": "- `2/saver <GrowID>`o : Simpan GrowID akun saver.<CR>        - `2/saverpull`o atau `2/sp`o : Pull saver selama 2 detik dengan jeda 250 ms, maksimal 8 kali.<CR>        - `2/stopd`o : Hentikan pull saver yang sedang aktif.",
+                                                "icon": 32
+                                        },
+                                        {
                                                 "title": "Gems Counter",
                                                 "description": "- `2/gems`o : Show gems in every block.<CR>        - `2/fgems`o : Open gems counter configuration. `4[Android APK? Ada di menu]`o",
                                                 "icon": 121
@@ -91,6 +138,11 @@
                                         {
                                                 "title": "Fast drop Lock's & Arroz",
                                                 "description": "- `2/dw`o (alias `2/dwl`o, `2/cd`o) : Drop World Lock - Contoh : `2/dw5`o (Drop 5 World Lock)<CR>        - `2/dd`o (alias `2/ddl`o) : Drop Diamond Lock - Contoh : `2/dd3`o (Drop 3 Diamond Lock)<CR>        - `2/db`o (alias `2/dbgl`o, `2/dgl`o) : Drop Blue Gem Lock - Contoh : `2/db2`o (Drop 2 Blue Gem Lock)<CR>        - `2/roz`o (alias `2/arroz`o) : Drop Arroz - Contoh : `2/roz10`o (Drop 10 Arroz)<CR>        - `2/daw`o : Drop all WL, DL, and BGL that you have in your inventory.",
+                                                "icon": 242
+                                        },
+                                        {
+                                                "title": "Split Lock",
+                                                "description": "`2/split <persen>`o : Drop persentase dari total nilai WL, DL, dan BGL di inventory. Contoh: `2/split 70%`o atau `2/split 12,5`o. Pecahan WL dibulatkan ke bawah, rincian tampil di overlay, dan nilai negatif tidak diterima.",
                                                 "icon": 242
                                         },
                                         {
@@ -146,7 +198,12 @@
                                         },
                                         {
                                                 "title": "`2/pf`o",
-                                                "description": "Aktifkan/Matikan Pathfinder untuk bantuan bergerak menuju tujuan. Alias: `2/pathfinder`o.",
+                                                "description": "Buka pengaturan delay Pathfinder: `wdelay_walking`o dan `wdelay_batch`o. Aktifkan Pathfinder melalui `2/opts`o atau Shift. Alias: `2/pathfinder`o.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "Anti Punch & Anti Bounce `4[Easy System Ban]`o",
+                                                "description": "Aktifkan melalui tab pertama `2/opts`o. Hanya tersimpan di memory, tetap aktif lintas world, dan reset saat disconnect atau proxy restart. Mod Fly tidak ditambahkan.",
                                                 "icon": 482
                                         }
                                 ]
@@ -163,6 +220,11 @@
                                         {
                                                 "title": "`2/options`o",
                                                 "description": "Membuka pengaturan World, Visual, SOCKS5, Automation, Mods Join, dan bahasa. Alias: `2/opts`o.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "`2/new`o `4[Windows]`o",
+                                                "description": "Buka Growtopia tambahan untuk akun lain tanpa menutup akun yang sedang berjalan.",
                                                 "icon": 482
                                         },
                                         {
@@ -304,5 +366,29 @@
                                 ]
                         }
                 ]
-        }
+        },
+        "ads": [
+                {
+                        "type": "OnTextOverlay",
+                        "status": true,
+                        "message": [
+                                "`4[!]`w TEAMFOXGT `4[!]\n`4> WORLD :`w FOXLP1\n`4> WEBSITE :`w WWW.TEAMFOXGT.COM"
+                        ]
+                },
+                {
+                        "type": "az_vert1",
+                        "status": true,
+                        "hash": -2055398483
+                },
+                {
+                        "type": "az_vert2",
+                        "status": true,
+                        "hash": 418129020
+                },
+                {
+                        "type": "az_16x9_adv1",
+                        "status": true,
+                        "hash": 673818451
+                }
+        ]
 }
