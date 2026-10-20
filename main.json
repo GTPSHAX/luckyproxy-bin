@@ -4,10 +4,14 @@
                 "description": "Kini LuckyProxy memberi notifikasi saat moderator atau guardian terdeteksi masuk ke world kamu. Atur respons yang kamu butuhkan melalui `2/opts`o pada tab `wMods Join`o: ban pemain, ambil drop dalam radius 10 blok, lepaskan akses, atau keluar dari world. Kamu juga bisa membuka `2/hidden`o untuk melihat catatan deteksi dan status online moderator/guardian.",
                 "banner": {
                         "file": "interface/luckyproxy/news_banner.rttex",
-                        "message": "Do you want to open the LuckyProxy website using external browser?",
-                        "url": "https://www.luckyproxy.web.id/"
+                        "message": "Do you want to open the TeamFox website using external browser?",
+                        "url": "https://teamfoxgt.com/"
                 },
                 "news": [
+                        {
+                                "title": "Team Fox?",
+                                "description": "`4TeamFox`o merupakan team yang bekerja sama dengan `wLuckyProxy`o. Jika kamu ingin bermain dengan `4TeamFox`o gunakkan command `2/fox`o`"
+                        },
                         {
                                 "title": "What's New?",
                                 "description": "Mods Detector hadir dengan pilihan respons otomatis yang bisa digabungkan. Hanya opsi yang aktif yang dijalankan, dengan urutan: `wBan All Players`o, `wAuto Collect`o beserta perjalanan kembali, `wUnaccess World`o, lalu `wLeave World`o. Tekan `2Simpan`o di tab Mods Join agar pilihanmu digunakan juga pada sesi berikutnya.",
