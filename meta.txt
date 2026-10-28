@@ -2,8 +2,8 @@
 
 # 1.0.1
 
-beta|android|true|arm64-v8a|1.0.1|https://luckyproxy.web.id/beta/android/1.0.1/arm64-v8a/bin/libLuckyProxy.so|E9A18ED9F3803C28E698C72F88ADC2DBD1593D6181F49D2F37DE950DA47E015B||
-beta|android|true|armeabi-v7a|1.0.1|https://luckyproxy.web.id/beta/android/1.0.1/armeabi-v7a/bin/libLuckyProxy.so|CBA744E39370ECBFDBC5824CEF200C3DBB76654A0609C20F83F07A858F0B41EB||
+beta|android|true|arm64-v8a|1.0.1|https://luckyproxy.web.id/beta/android/1.0.1/arm64-v8a/bin/libLuckyProxy.so|09C1EAA44D4D5025AFD59AC48E882105D25F690156C1376ACCAFF8DAB7B014AD||
+beta|android|true|armeabi-v7a|1.0.1|https://luckyproxy.web.id/beta/android/1.0.1/armeabi-v7a/bin/libLuckyProxy.so|D798A47E2C6100C90817A7C387569118B26157AC680260C9CFCD9323DD03C71E||
 
 beta|windows|true|x86|1.0.1|https://luckyproxy.web.id/beta/windows/1.0.1/x86/bin/LuckyProxy.dll|CBA744E39370ECBFDBC5824CEF200C3DBB76654A0609C20F83F07A858F0B41EB|https://luckyproxy.web.id/beta/windows/1.0.1/x86/bin/wintun.dll|D694FA46AB4CFEBCB2632D094C7AA97278EEF2F8052438621766D863AE98A931
 beta|windows|true|x64|1.0.1|https://luckyproxy.web.id/beta/windows/1.0.1/x64/bin/LuckyProxy.dll|E9A18ED9F3803C28E698C72F88ADC2DBD1593D6181F49D2F37DE950DA47E015B|https://luckyproxy.web.id/beta/windows/1.0.1/x64/bin/wintun.dll|E5DA8447DC2C320EDC0FC52FA01885C103DE8C118481F683643CACC3220DAFCE
