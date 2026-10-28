@@ -3,10 +3,10 @@
                 "title": "New Visuals for Streamers!",
                 "description": "Tampilan roulette jadi Crystal Clock lewat `2/rspin`o dan sembunyikan nama pemain lewat `2/hideall`o! Khusus Android Beta, gunakan toggle pada panel `wVisual`o di mod menu yang mendukung. Login berikutnya juga memakai data item yang sudah tersimpan selama versinya masih cocok. Cek poin update di bawah!",
                 "banner": {
-                        "file": "interface/luckyproxy/news_banner.rttex",
+                        "file": "interface/luckyproxy/news_banner2.rttex",
                         "message": "Do you want to open the TeamFox website using external browser?",
                         "url": "https://teamfoxgt.com/",
-                        "hash": -258000010
+                        "hash": 803698140
                 },
                 "news": [
                         {
