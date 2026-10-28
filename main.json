@@ -1,7 +1,7 @@
 {
         "gazette": {
-                "title": "New Commands & Options!",
-                "description": "Bagi lock dengan `2/split`o, panggil saver lewat `2/sp`o, dan atur Pathfinder lewat `2/pf`o. Ada juga Auto convert WL ke DL, Anti Punch, dan Anti Bounce di `2/opts`o. Cek poin update di bawah, lalu pilih fitur yang cocok buat kamu!",
+                "title": "New Visuals for Streamers!",
+                "description": "Tampilan roulette jadi Crystal Clock lewat `2/rspin`o dan sembunyikan nama pemain lewat `2/hideall`o! Khusus Android Beta, gunakan toggle pada panel `wVisual`o di mod menu yang mendukung. Login berikutnya juga memakai data item yang sudah tersimpan selama versinya masih cocok. Cek poin update di bawah!",
                 "banner": {
                         "file": "interface/luckyproxy/news_banner.rttex",
                         "message": "Do you want to open the TeamFox website using external browser?",
@@ -16,8 +16,23 @@
                         },
                         {
                                 "title": "What's New?",
-                                "description": "Command makin praktis, options makin lengkap. Ini poin utama update LuckyProxy terbaru:",
+                                "description": "Tampilan makin praktis buat streamer, login berikutnya lebih nyaman. Ini poin utama update LuckyProxy terbaru:",
                                 "items": [
+                                        {
+                                                "title": "Roulette jadi Crystal Clock `4[For Streamer]`o",
+                                                "description": "Windows Beta: gunakan `2/rspin`o atau alias `2/rodaberputar`o. Semua Roulette Wheel di world tampil sebagai Crystal Clock hanya di layar kamu; fungsi roulette tetap sama. Saat siapa pun memutarnya, tile tersebut berkedip hijau-hitam selama 3 detik sebagai penanda. Gunakan lagi untuk mengembalikan tampilan. Android Beta: toggle `wReplace Roulette Wheel with Crystal Clock`o pada panel `wVisual`o di mod menu yang mendukung.",
+                                                "icon": 2252
+                                        },
+                                        {
+                                                "title": "Hide Name `4[For Streamer]`o",
+                                                "description": "Windows Beta: gunakan `2/hideall`o atau alias `2/hidename`o untuk mengganti tampilan semua nama pemain, termasuk namamu, menjadi `w[ HIDDEN ]`o. Warna nama, ping, dan nomor roulette tetap tampil. Fast Wrench tetap menargetkan pemain yang benar. Gunakan lagi untuk mengembalikan nama. Android Beta: toggle `wHide Name`o pada panel `wVisual`o di mod menu yang mendukung. `4Hanya nama di atas karakter yang disembunyikan, bukan isi chat atau dialog.`o",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "Data item tidak diunduh ulang setiap startup",
+                                                "description": "Data item asli kini disimpan untuk login berikutnya. Selama versi server masih cocok dan file tersimpan dengan baik, proxy memakai data yang sudah ada tanpa mengunduh ulang dari server. Data akan diperbarui jika versinya berubah atau file tidak dapat dipakai. Pengiriman data item dari proxy ke game tetap dapat terjadi bila diperlukan.",
+                                                "icon": 482
+                                        },
                                         {
                                                 "title": "Split lock sesuai persentase",
                                                 "description": "`2/split <persen>`o menghitung total WL, DL, dan BGL dalam nilai WL, lalu drop bagian yang kamu pilih. Contoh: 2 DL + 100 WL dengan `2/split 70`o menghasilkan drop senilai 210 WL dan sisa 90 WL. Bisa pakai `w70%`o atau `w12,5`o; pecahan WL dibulatkan ke bawah. Rincian hitungannya tampil di overlay, dan nilai negatif ditolak.",
@@ -106,6 +121,16 @@
                                 "description": "Daftar commands yang memudahkan hoster dalam pekerjaan mereka :",
                                 "items": [
                                         {
+                                                "title": "Roulette Visual `4[For Streamer]`o",
+                                                "description": "- `2/rspin`o (alias `2/rodaberputar`o) : Windows Beta, ganti tampilan Roulette Wheel menjadi Crystal Clock tanpa mengubah fungsinya. Tile yang diputar siapa pun berkedip hijau-hitam selama 3 detik.<CR>        - Android Beta: toggle pada panel `wVisual`o di mod menu yang mendukung.",
+                                                "icon": 2252
+                                        },
+                                        {
+                                                "title": "Hide Name `4[For Streamer]`o",
+                                                "description": "- `2/hideall`o (alias `2/hidename`o) : Windows Beta, ganti semua display name menjadi `w[ HIDDEN ]`o, termasuk pemain lokal. Warna nama, ping, dan nomor roulette tetap tampil; target Fast Wrench tidak berubah. Isi chat/dialog tidak disembunyikan.<CR>        - Android Beta: toggle `wHide Name`o pada panel `wVisual`o di mod menu yang mendukung.",
+                                                "icon": 482
+                                        },
+                                        {
                                                 "title": "Fast Pull",
                                                 "description": "- `2/fpull`o : Fast pull Player with wrench. `4[Android APK? Ada di menu]`o<CR>        - `2/pulltile`o : Setup pull tile configuration.<CR>        - `2/pt`o : Pull Player inside the tile.",
                                                 "icon": 32
@@ -176,6 +201,16 @@
                                 "title": "Player states commands",
                                 "description": "Daftar commands yang memodifikasi state player :",
                                 "items": [
+                                        {
+                                                "title": "`2/rspin`o `4[For Streamer]`o",
+                                                "description": "Windows Beta: ganti tampilan Roulette Wheel menjadi Crystal Clock. Alias: `2/rodaberputar`o. Tile yang diputar siapa pun berkedip hijau-hitam selama 3 detik. Hanya tampilan lokal, fungsi roulette tetap sama. Android Beta: toggle pada panel `wVisual`o di mod menu yang mendukung.",
+                                                "icon": 2252
+                                        },
+                                        {
+                                                "title": "`2/hideall`o `4[For Streamer]`o",
+                                                "description": "Windows Beta: sembunyikan semua display name, termasuk pemain lokal, menjadi `w[ HIDDEN ]`o. Alias: `2/hidename`o. Warna nama, ping, dan nomor roulette tetap tampil; target Fast Wrench tidak berubah. Tidak menyembunyikan isi chat/dialog. Android Beta: toggle `wHide Name`o pada panel `wVisual`o di mod menu yang mendukung.",
+                                                "icon": 482
+                                        },
                                         {
                                                 "title": "`2/mzoom`o `4[Android APK? Ada di menu]`o",
                                                 "description": "Zoom out tanpa batas. Alias: `2/zoom`o dan `2/modzoom`o.",
