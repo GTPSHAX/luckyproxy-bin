@@ -1,5 +1,10 @@
 # releaseStage[alpha,beta,stable,debug]|platform[windows,macos,android,ios]|isLib|arch|version|url|hash|extraFiles[dipisahkan dengan koma]|extraFilesHash[dipisahkan dengan koma]
 
+# 1.0.2
+
+beta|android|true|arm64-v8a|1.0.2|https://luckyproxy.web.id/beta/android/1.0.1/arm64-v8a/bin/libLuckyProxy.so|796A0182388E8E1FDFA710268FD95F58CFF49B51C2703C120559562A3E95CF56||
+beta|android|true|armeabi-v7a|1.0.2|https://luckyproxy.web.id/beta/android/1.0.1/armeabi-v7a/bin/libLuckyProxy.so|85438D391CB9304EC6AA552E83D2BEC6B7101907D618DDD516645D5F889EC18E||
+
 # 1.0.1
 
 beta|android|true|arm64-v8a|1.0.1|https://luckyproxy.web.id/beta/android/1.0.1/arm64-v8a/bin/libLuckyProxy.so|09C1EAA44D4D5025AFD59AC48E882105D25F690156C1376ACCAFF8DAB7B014AD||
