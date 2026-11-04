@@ -1,7 +1,7 @@
 {
         "gazette": {
-                "title": "New Visuals for Streamers!",
-                "description": "Tampilan roulette jadi Crystal Clock lewat `2/rspin`o dan sembunyikan nama pemain lewat `2/hideall`o! Khusus Android Beta, gunakan toggle pada panel `wVisual`o di mod menu yang mendukung. Login berikutnya juga memakai data item yang sudah tersimpan selama versinya masih cocok. Cek poin update di bawah!",
+                "title": "Automation Makin Lengkap!",
+                "description": "Auto Farm, Auto Fish, Auto Surgery, Auto Startopia, dan Auto Pull Tile kini punya command dan pengaturan sendiri. Cek poin update di bawah!",
                 "banner": {
                         "file": "interface/luckyproxy/news_banner2.rttex",
                         "message": "Do you want to open the TeamFox website using external browser?",
@@ -19,54 +19,29 @@
                                 "description": "Tampilan makin praktis buat streamer, login berikutnya lebih nyaman. Ini poin utama update LuckyProxy terbaru:",
                                 "items": [
                                         {
-                                                "title": "Roulette jadi Crystal Clock `4[For Streamer]`o",
-                                                "description": "Windows Beta: gunakan `2/rspin`o atau alias `2/rodaberputar`o. Semua Roulette Wheel di world tampil sebagai Crystal Clock hanya di layar kamu; fungsi roulette tetap sama. Saat siapa pun memutarnya, tile tersebut berkedip hijau-hitam selama 3 detik sebagai penanda. Gunakan lagi untuk mengembalikan tampilan. Android Beta: toggle `wReplace Roulette Wheel with Crystal Clock`o pada panel `wVisual`o di mod menu yang mendukung.",
-                                                "icon": 2252
-                                        },
-                                        {
-                                                "title": "Hide Name `4[For Streamer]`o",
-                                                "description": "Windows Beta: gunakan `2/hideall`o atau alias `2/hidename`o untuk mengganti tampilan semua nama pemain, termasuk namamu, menjadi `w[ HIDDEN ]`o. Warna nama, ping, dan nomor roulette tetap tampil. Fast Wrench tetap menargetkan pemain yang benar. Gunakan lagi untuk mengembalikan nama. Android Beta: toggle `wHide Name`o pada panel `wVisual`o di mod menu yang mendukung. `4Hanya nama di atas karakter yang disembunyikan, bukan isi chat atau dialog.`o",
+                                                "title": "Auto Farm lebih stabil",
+                                                "description": "Aktifkan dengan `2/farm`o, atur tipe blok lewat `2/autofarm`o. Auto Farm kini mengikuti gerakan punch & place yang konsisten dengan cara manual.",
                                                 "icon": 482
                                         },
                                         {
-                                                "title": "Data item tidak diunduh ulang setiap startup",
-                                                "description": "Data item asli kini disimpan untuk login berikutnya. Selama versi server masih cocok dan file tersimpan dengan baik, proxy memakai data yang sudah ada tanpa mengunduh ulang dari server. Data akan diperbarui jika versinya berubah atau file tidak dapat dipakai. Pengiriman data item dari proxy ke game tetap dapat terjadi bila diperlukan.",
+                                                "title": "Auto Fish",
+                                                "description": "Aktifkan dengan `2/fish`o, atur lewat `2/autofish`o termasuk Auto Trash. Lempar, reeling, dan bait berjalan otomatis.",
                                                 "icon": 482
                                         },
                                         {
-                                                "title": "Split lock sesuai persentase",
-                                                "description": "`2/split <persen>`o menghitung total WL, DL, dan BGL dalam nilai WL, lalu drop bagian yang kamu pilih. Contoh: 2 DL + 100 WL dengan `2/split 70`o menghasilkan drop senilai 210 WL dan sisa 90 WL. Bisa pakai `w70%`o atau `w12,5`o; pecahan WL dibulatkan ke bawah. Rincian hitungannya tampil di overlay, dan nilai negatif ditolak.",
-                                                "icon": 242
-                                        },
-                                        {
-                                                "title": "Saver tinggal panggil",
-                                                "description": "Simpan GrowID saver lewat `2/saver <GrowID>`o, lalu gunakan `2/saverpull`o atau alias `2/sp`o untuk pull selama 2 detik dengan jeda 250 ms, maksimal 8 kali. GrowID tersimpan untuk sesi berikutnya. Gunakan `2/stopd`o jika ingin menghentikan pull.",
-                                                "icon": 32
-                                        },
-                                        {
-                                                "title": "Auto convert WL ke DL",
-                                                "description": "Aktifkan lewat `2/opts`o pada tab `wAuto`o. Setelah kamu collect WL, konversi dijalankan jika inventory berisi lebih dari 100 WL dan kurang dari 200 DL. Pilihan ini tersimpan; default-nya nonaktif.",
-                                                "icon": 242
-                                        },
-                                        {
-                                                "title": "Pathfinder punya pengaturan sendiri",
-                                                "description": "`2/pf`o atau `2/pathfinder`o kini membuka pengaturan `wdelay_walking`o dan `wdelay_batch`o. Jalur lebih menghindari bahaya, pergerakan di air diperbarui, dan melepas Shift tidak membatalkan perjalanan yang sudah berjalan. `4Pengaturan delay bukan jaminan aman dari ban.`o",
+                                                "title": "Auto Surgery",
+                                                "description": "Aktifkan dengan `2/surg`o atau `2/autosurg`o. Hentikan kapan saja dengan `2/stopd`o.",
                                                 "icon": 482
                                         },
                                         {
-                                                "title": "Anti Punch & Anti Bounce",
-                                                "description": "Ada di tab pertama `2/opts`o. `wAnti Punch`o: pukul aja, aku mah santai... `wAnti Bounce`o: aku bukan bola bekel! `4[Easy System Ban]`o Keduanya default OFF, tidak disimpan ke config, tetap aktif saat keluar/pindah world, dan reset saat disconnect atau proxy restart.",
+                                                "title": "Auto Startopia",
+                                                "description": "Aktifkan dengan `2/startopia`o atau `2/autostartopia`o. Matikan dengan menjalankan command lagi.",
                                                 "icon": 482
                                         },
                                         {
                                                 "title": "Akun tambahan dengan /new",
                                                 "description": "Khusus Windows: gunakan `2/new`o untuk membuka Growtopia tambahan tanpa menutup akun yang sudah berjalan. Cukup dari `wLuckyProxy.exe`o, tanpa script Python terpisah.",
                                                 "icon": 482
-                                        },
-                                        {
-                                                "title": "Tutorial pemula otomatis",
-                                                "description": "Tutorial akun baru ditangani otomatis, termasuk langkah `wSet Home`o. Biar akun baru cepat siap diajak main!",
-                                                "icon": 242
                                         }
                                 ]
                         },
@@ -193,6 +168,37 @@
                                         {
                                                 "title": "Remove World Access",
                                                 "description": "`2/unacc`o : Lepaskan aksesmu dari lock milik orang lain di world saat ini, termasuk konfirmasinya secara otomatis.",
+                                                "icon": 482
+                                        }
+                                ]
+                        },
+                        {
+                                "title": "Automatic commands",
+                                "description": "Daftar commands fitur otomatis yang berjalan sendiri setelah diaktifkan :",
+                                "items": [
+                                        {
+                                                "title": "Auto Farm",
+                                                "description": "- `2/farm`o : Aktifkan/Matikan Auto Farm (punch & place blok yang dipilih). Matikan dengan menjalankan `2/farm`o lagi.<CR>        - `2/autofarm`o : Buka pengaturan Auto Farm, termasuk pemilihan tipe blok.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "Auto Fish",
+                                                "description": "- `2/fish`o : Aktifkan/Matikan Auto Fish (lempar, reeling, dan bait otomatis). Matikan dengan menjalankan `2/fish`o lagi.<CR>        - `2/autofish`o : Buka pengaturan Auto Fish dan Auto Trash.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "Auto Surgery",
+                                                "description": "- `2/surg`o (alias `2/autosurg`o) : Aktifkan/Matikan Auto Surgery atau buka pengaturannya.<CR>        - `2/stopd`o : Hentikan Auto Surgery yang sedang aktif.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "Auto Startopia",
+                                                "description": "- `2/startopia`o (alias `2/autostartopia`o) : Aktifkan/Matikan Auto Startopia atau buka pengaturannya. Matikan dengan menjalankan command lagi.",
+                                                "icon": 482
+                                        },
+                                        {
+                                                "title": "Auto Pull Tile",
+                                                "description": "- `2/pulltile`o : Buka pengaturan tile untuk pull otomatis.<CR>        - `2/pt`o : Pull pemain yang berada di dalam tile secara otomatis.<CR>        - `2/stopd`o : Hentikan pemilihan tile atau pull yang sedang aktif.",
                                                 "icon": 482
                                         }
                                 ]
