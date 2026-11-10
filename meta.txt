@@ -1,5 +1,13 @@
 # releaseStage[alpha,beta,stable,debug]|platform[windows,macos,android,ios]|isLib|arch|version|url|hash|extraFiles[dipisahkan dengan koma]|extraFilesHash[dipisahkan dengan koma]
 
+# 1.1.1
+
+beta|android|true|arm64-v8a|1.1.1|https://luckyproxy.web.id/beta/android/1.1.1/arm64-v8a/bin/libLuckyProxy.so|49CACED86BEF17237715CA1F69BB44C2655324EC8C8C411A2D6DF658F57170C3||
+beta|android|true|armeabi-v7a|1.1.1|https://luckyproxy.web.id/beta/android/1.1.1/armeabi-v7a/bin/libLuckyProxy.so|D602DF4A7E60137F420CB6FD421580F1A4B7EE625BFB7E5702B7491EE161E36C||
+
+beta|windows|true|x86|1.1.1|https://luckyproxy.web.id/beta/windows/1.1.1/x86/bin/LuckyProxy.dll|53648912B50697AEE966125F059306165A6905F09FED829C7E87A227D9D6A813|https://luckyproxy.web.id/beta/windows/1.1.1/x86/bin/wintun.dll|D694FA46AB4CFEBCB2632D094C7AA97278EEF2F8052438621766D863AE98A931
+beta|windows|true|x64|1.1.1|https://luckyproxy.web.id/beta/windows/1.1.1/x64/bin/LuckyProxy.dll|72CA46321EEB61B9573FBAF69B4A1BBD45BDC99FCC3CDBF91C186DC8622ABDEA|https://luckyproxy.web.id/beta/windows/1.1.1/x64/bin/wintun.dll|E5DA8447DC2C320EDC0FC52FA01885C103DE8C118481F683643CACC3220DAFCE
+
 # 1.1.0
 
 beta|android|true|arm64-v8a|1.1.0|https://luckyproxy.web.id/beta/android/1.1.0/arm64-v8a/bin/libLuckyProxy.so|CEC6DDC3AF9F1DBBDD5F8254EDFD17469196708122A4D1638B49F60430B081BF||
