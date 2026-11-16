@@ -1,0 +1,12 @@
+# Splashes
+splash|`2[Did You Know]`w Lucky Proxy is developed by a cool person
+splash|`2[Did You Know]`w 10 Services is maintained by one person
+splash|`2[Did You Know]`w The dev of Lucky Proxy is born with GTPS, he never play Real Server
+splash|`2[Did You Know]`w The dev of Lucky Proxy is never have more than 5 DL in his entire life
+splash|`2[Did You Know]`w Socks5 is supported by Lucky Proxy
+splash|`2[Did You Know]`w Socks5 only for IP masking in local machine, not increasing your connection speed
+splash|`2[Did You Know]`w Getting Shadow ban or Error connection? Use Socks5
+splash|`2[Did You Know]`w Making Growtopia Proxy like this is more easier than creating a GTPS
+splash|`2[Did You Know]`w GTPSHAX always frustrates when arguing with AI
+splash|`2[Did You Know]`w Lucky Proxy beta use GTProxy as the base
+splash|`2[Did You Know]`w Collecting crash log for development purpose (Send as Anonymous and never sending any personal or credential data)
