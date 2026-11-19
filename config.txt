@@ -10,3 +10,7 @@ splash|`2[Did You Know]`w Making Growtopia Proxy like this is more easier than c
 splash|`2[Did You Know]`w GTPSHAX always frustrates when arguing with AI
 splash|`2[Did You Know]`w Lucky Proxy beta use GTProxy as the base
 splash|`2[Did You Know]`w Collecting crash log for development purpose (Send as Anonymous and never sending any personal or credential data)
+
+# Lowping
+
+lowping_master_https|202.155.143.176:443
