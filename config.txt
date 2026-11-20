@@ -13,4 +13,4 @@ splash|`2[Did You Know]`w Collecting crash log for development purpose (Send as 
 
 # Lowping
 
-lowping_master_https|202.155.143.176:443
+lowping_master_https|167.71.88.120:443
