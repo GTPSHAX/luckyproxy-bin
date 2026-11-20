@@ -12,5 +12,4 @@ splash|`2[Did You Know]`w Lucky Proxy beta use GTProxy as the base
 splash|`2[Did You Know]`w Collecting crash log for development purpose (Send as Anonymous and never sending any personal or credential data)
 
 # Lowping
-
 lowping_master_https|167.71.88.120:443
