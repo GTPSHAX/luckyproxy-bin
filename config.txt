@@ -13,3 +13,13 @@ splash|`2[Did You Know]`w Collecting crash log for development purpose (Send as 
 
 # Lowping
 lowping_master_https|167.71.88.120:443
+
+# Growtopia metadata
+gt_windows_client_version|5.62
+gt_windows_client_protocol|228
+gt_android_client_version|5.62
+gt_android_client_protocol|228
+gt_macos_client_version|5.62
+gt_macos_client_protocol|228
+gt_ios_client_version|5.62
+gt_ios_client_protocol|228
